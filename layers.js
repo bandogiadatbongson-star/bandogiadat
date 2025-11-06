@@ -1,0 +1,585 @@
+var wms_layers = [];
+
+var format_nggiaothng_0 = new ol.format.GeoJSON();
+var features_nggiaothng_0 = format_nggiaothng_0.readFeatures(json_nggiaothng_0, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_nggiaothng_0 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_nggiaothng_0.addFeatures(features_nggiaothng_0);
+var lyr_nggiaothng_0 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_nggiaothng_0, 
+                style: style_nggiaothng_0,
+                popuplayertitle: 'Đường giao thông',
+                interactive: true,
+    title: 'Đường giao thông<br />\
+    <img src="styles/legend/nggiaothng_0_0.png" /> 28/3<br />\
+    <img src="styles/legend/nggiaothng_0_1.png" /> Ba Đình<br />\
+    <img src="styles/legend/nggiaothng_0_2.png" /> Bà Huyện Thanh Quan<br />\
+    <img src="styles/legend/nggiaothng_0_3.png" /> Bạch Đằng<br />\
+    <img src="styles/legend/nggiaothng_0_4.png" /> Biên Cương<br />\
+    <img src="styles/legend/nggiaothng_0_5.png" /> Bùi Thị Xuân<br />\
+    <img src="styles/legend/nggiaothng_0_6.png" /> Cách Mạng Tháng Tám<br />\
+    <img src="styles/legend/nggiaothng_0_7.png" /> Chử Đồng Tử<br />\
+    <img src="styles/legend/nggiaothng_0_8.png" /> Chu Huy Mân<br />\
+    <img src="styles/legend/nggiaothng_0_9.png" /> Chương Dương<br />\
+    <img src="styles/legend/nggiaothng_0_10.png" /> Đại La<br />\
+    <img src="styles/legend/nggiaothng_0_11.png" /> Đại Việt<br />\
+    <img src="styles/legend/nggiaothng_0_12.png" /> Đào Đình Luyện<br />\
+    <img src="styles/legend/nggiaothng_0_13.png" /> Đào Duy Anh<br />\
+    <img src="styles/legend/nggiaothng_0_14.png" /> Đinh Bộ Lĩnh<br />\
+    <img src="styles/legend/nggiaothng_0_15.png" /> Đô Đốc Bảo<br />\
+    <img src="styles/legend/nggiaothng_0_16.png" /> Đô Đốc Lân<br />\
+    <img src="styles/legend/nggiaothng_0_17.png" /> Đô Đốc Lộc<br />\
+    <img src="styles/legend/nggiaothng_0_18.png" /> Đô Đốc Long<br />\
+    <img src="styles/legend/nggiaothng_0_19.png" /> Đô Đốc Mưu<br />\
+    <img src="styles/legend/nggiaothng_0_20.png" /> Đô Đốc Tuyết<br />\
+    <img src="styles/legend/nggiaothng_0_21.png" /> Đỗ Nhuận<br />\
+    <img src="styles/legend/nggiaothng_0_22.png" /> Đoàn Khuê<br />\
+    <img src="styles/legend/nggiaothng_0_23.png" /> Đoàn Thị Điểm<br />\
+    <img src="styles/legend/nggiaothng_0_24.png" /> Đồng Khởi<br />\
+    <img src="styles/legend/nggiaothng_0_25.png" /> Đức Thọ<br />\
+    <img src="styles/legend/nggiaothng_0_26.png" /> Đường BTXM<br />\
+    <img src="styles/legend/nggiaothng_0_27.png" /> Đường BTXM khu phố 1<br />\
+    <img src="styles/legend/nggiaothng_0_28.png" /> Đường BTXM khu phố 2<br />\
+    <img src="styles/legend/nggiaothng_0_29.png" /> Đường BTXM khu phố 5<br />\
+    <img src="styles/legend/nggiaothng_0_30.png" /> Đường BTXM khu phố Liêm Bình<br />\
+    <img src="styles/legend/nggiaothng_0_31.png" /> Đường BTXM khu phố Liêm Bình - Khu phố 5<br />\
+    <img src="styles/legend/nggiaothng_0_32.png" /> Đường BTXM khu phố Trung Lương<br />\
+    <img src="styles/legend/nggiaothng_0_33.png" /> Đường gom Nguyễn Văn Linh<br />\
+    <img src="styles/legend/nggiaothng_0_34.png" /> Đường N1- KDC Thiết Đính Bắc<br />\
+    <img src="styles/legend/nggiaothng_0_35.png" /> Đường sau chợ Bồng Sơn<br />\
+    <img src="styles/legend/nggiaothng_0_36.png" /> Đường trong KDC Tây Bắc Chợ (đường từ Hoàng văn Thụ đến Đào Đình Luyện)<br />\
+    <img src="styles/legend/nggiaothng_0_37.png" /> Giải Phóng<br />\
+    <img src="styles/legend/nggiaothng_0_38.png" /> Hai Bà Trưng<br />\
+    <img src="styles/legend/nggiaothng_0_39.png" /> hẻm<br />\
+    <img src="styles/legend/nggiaothng_0_40.png" /> hẻm rẻ nhánh<br />\
+    <img src="styles/legend/nggiaothng_0_41.png" /> Hẻm rẻ nhánh<br />\
+    <img src="styles/legend/nggiaothng_0_42.png" /> hẻm rẽ nhánh 1<br />\
+    <img src="styles/legend/nggiaothng_0_43.png" /> hẻm rẻ nhánh 1<br />\
+    <img src="styles/legend/nggiaothng_0_44.png" /> hẻm rẽ nhánh 2<br />\
+    <img src="styles/legend/nggiaothng_0_45.png" /> hẻm rẻ nhánh 2<br />\
+    <img src="styles/legend/nggiaothng_0_46.png" /> hẻm rẻ nhánh 3<br />\
+    <img src="styles/legend/nggiaothng_0_47.png" /> Hồ Xuân Hương<br />\
+    <img src="styles/legend/nggiaothng_0_48.png" /> Hoàng Minh Thảo<br />\
+    <img src="styles/legend/nggiaothng_0_49.png" /> Hoàng Văn Thụ<br />\
+    <img src="styles/legend/nggiaothng_0_50.png" /> Hùng Vương<br />\
+    <img src="styles/legend/nggiaothng_0_51.png" /> Huỳnh Đăng Thơ<br />\
+    <img src="styles/legend/nggiaothng_0_52.png" /> Huỳnh Tịnh Của<br />\
+    <img src="styles/legend/nggiaothng_0_53.png" /> Lê Chân<br />\
+    <img src="styles/legend/nggiaothng_0_54.png" /> Lê Lai<br />\
+    <img src="styles/legend/nggiaothng_0_55.png" /> Lê Lợi<br />\
+    <img src="styles/legend/nggiaothng_0_56.png" /> Lê Thanh Nghị<br />\
+    <img src="styles/legend/nggiaothng_0_57.png" /> Lê Thị Riêng<br />\
+    <img src="styles/legend/nggiaothng_0_58.png" /> Lê Văn Hưng<br />\
+    <img src="styles/legend/nggiaothng_0_59.png" /> Lê Xuân Trữ<br />\
+    <img src="styles/legend/nggiaothng_0_60.png" /> Mai Dương<br />\
+    <img src="styles/legend/nggiaothng_0_61.png" /> Ngô Gia Tự<br />\
+    <img src="styles/legend/nggiaothng_0_62.png" /> Ngô Quyền<br />\
+    <img src="styles/legend/nggiaothng_0_63.png" /> Ngọc Hân Công Chúa<br />\
+    <img src="styles/legend/nggiaothng_0_64.png" /> Nguyễn Đình Thi<br />\
+    <img src="styles/legend/nggiaothng_0_65.png" /> Nguyễn Duy Trinh<br />\
+    <img src="styles/legend/nggiaothng_0_66.png" /> Nguyễn Khuyến<br />\
+    <img src="styles/legend/nggiaothng_0_67.png" /> Nguyễn Sinh Khiêm<br />\
+    <img src="styles/legend/nggiaothng_0_68.png" /> Nguyễn Sinh Sắc<br />\
+    <img src="styles/legend/nggiaothng_0_69.png" /> Nguyễn Tất Thành<br />\
+    <img src="styles/legend/nggiaothng_0_70.png" /> Nguyễn Thị Thập<br />\
+    <img src="styles/legend/nggiaothng_0_71.png" /> Nguyễn Thượng Hiền<br />\
+    <img src="styles/legend/nggiaothng_0_72.png" /> Nguyễn Văn Linh<br />\
+    <img src="styles/legend/nggiaothng_0_73.png" /> Phan Đình Tuyển<br />\
+    <img src="styles/legend/nggiaothng_0_74.png" /> Phan Huy Ích<br />\
+    <img src="styles/legend/nggiaothng_0_75.png" /> Quang Trung<br />\
+    <img src="styles/legend/nggiaothng_0_76.png" /> Tạ Quang Bửu<br />\
+    <img src="styles/legend/nggiaothng_0_77.png" /> Tăng Bạt Hổ<br />\
+    <img src="styles/legend/nggiaothng_0_78.png" /> Thi Sách<br />\
+    <img src="styles/legend/nggiaothng_0_79.png" /> thiếu thông tin<br />\
+    <img src="styles/legend/nggiaothng_0_80.png" /> Tô Hiệu<br />\
+    <img src="styles/legend/nggiaothng_0_81.png" /> Tố Hữu<br />\
+    <img src="styles/legend/nggiaothng_0_82.png" /> Tô Ký<br />\
+    <img src="styles/legend/nggiaothng_0_83.png" /> Tôn Đức Thắng<br />\
+    <img src="styles/legend/nggiaothng_0_84.png" /> Trần Bình Trọng<br />\
+    <img src="styles/legend/nggiaothng_0_85.png" /> Trần Hưng Đạo<br />\
+    <img src="styles/legend/nggiaothng_0_86.png" /> Trần Phú<br />\
+    <img src="styles/legend/nggiaothng_0_87.png" /> Trần Quang Diệu<br />\
+    <img src="styles/legend/nggiaothng_0_88.png" /> Trần Thị Kỷ<br />\
+    <img src="styles/legend/nggiaothng_0_89.png" /> Trần Văn An<br />\
+    <img src="styles/legend/nggiaothng_0_90.png" /> Trần Văn Cẩn<br />\
+    <img src="styles/legend/nggiaothng_0_91.png" /> Trường Chinh<br />\
+    <img src="styles/legend/nggiaothng_0_92.png" /> Tuệ Tĩnh<br />\
+    <img src="styles/legend/nggiaothng_0_93.png" /> Võ Đình Tú<br />\
+    <img src="styles/legend/nggiaothng_0_94.png" /> Võ Văn Dũng<br />' });
+var format_tnngnghip_1 = new ol.format.GeoJSON();
+var features_tnngnghip_1 = format_tnngnghip_1.readFeatures(json_tnngnghip_1, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_tnngnghip_1 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_tnngnghip_1.addFeatures(features_tnngnghip_1);
+var lyr_tnngnghip_1 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_tnngnghip_1, 
+                style: style_tnngnghip_1,
+                popuplayertitle: 'Đất nông nghiệp',
+                interactive: true,
+    title: 'Đất nông nghiệp<br />\
+    <img src="styles/legend/tnngnghip_1_0.png" /> 70000.0<br />\
+    <img src="styles/legend/tnngnghip_1_1.png" /> 90000.0<br />\
+    <img src="styles/legend/tnngnghip_1_2.png" /> 96000.0<br />' });
+var format_tphinngnghip_2 = new ol.format.GeoJSON();
+var features_tphinngnghip_2 = format_tphinngnghip_2.readFeatures(json_tphinngnghip_2, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_tphinngnghip_2 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_tphinngnghip_2.addFeatures(features_tphinngnghip_2);
+var lyr_tphinngnghip_2 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_tphinngnghip_2, 
+                style: style_tphinngnghip_2,
+                popuplayertitle: 'Đất phi nông nghiệp',
+                interactive: true,
+    title: 'Đất phi nông nghiệp<br />\
+    <img src="styles/legend/tphinngnghip_2_0.png" /> 70000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_1.png" /> 98000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_2.png" /> 112000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_3.png" /> 140000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_4.png" /> 155000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_5.png" /> 160000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_6.png" /> 170000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_7.png" /> 180000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_8.png" /> 196000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_9.png" /> 200000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_10.png" /> 204000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_11.png" /> 210000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_12.png" /> 217000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_13.png" /> 220000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_14.png" /> 224000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_15.png" /> 238000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_16.png" /> 240000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_17.png" /> 248000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_18.png" /> 250000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_19.png" /> 252000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_20.png" /> 255000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_21.png" /> 270000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_22.png" /> 280000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_23.png" /> 294000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_24.png" /> 300000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_25.png" /> 308000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_26.png" /> 310000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_27.png" /> 320000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_28.png" /> 322000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_29.png" /> 330000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_30.png" /> 336000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_31.png" /> 340000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_32.png" /> 345000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_33.png" /> 357000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_34.png" /> 360000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_35.png" /> 372000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_36.png" /> 375000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_37.png" /> 378000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_38.png" /> 380000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_39.png" /> 390000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_40.png" /> 392000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_41.png" /> 400000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_42.png" /> 420000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_43.png" /> 430000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_44.png" /> 434000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_45.png" /> 440000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_46.png" /> 450000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_47.png" /> 460000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_48.png" /> 465000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_49.png" /> 476000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_50.png" /> 480000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_51.png" /> 483000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_52.png" /> 490000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_53.png" /> 495000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_54.png" /> 500000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_55.png" /> 504000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_56.png" /> 510000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_57.png" /> 520000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_58.png" /> 532000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_59.png" /> 540000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_60.png" /> 546000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_61.png" /> 570000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_62.png" /> 585000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_63.png" /> 588000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_64.png" /> 600000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_65.png" /> 602000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_66.png" /> 620000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_67.png" /> 630000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_68.png" /> 640000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_69.png" /> 645000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_70.png" /> 651000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_71.png" /> 660000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_72.png" /> 672000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_73.png" /> 675000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_74.png" /> 680000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_75.png" /> 686000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_76.png" /> 690000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_77.png" /> 693000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_78.png" /> 700000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_79.png" /> 714000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_80.png" /> 720000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_81.png" /> 728000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_82.png" /> 750000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_83.png" /> 756000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_84.png" /> 760000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_85.png" /> 780000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_86.png" /> 784000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_87.png" /> 791000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_88.png" /> 833000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_89.png" /> 840000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_90.png" /> 860000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_91.png" /> 868000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_92.png" /> 882000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_93.png" /> 900000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_94.png" /> 903000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_95.png" /> 930000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_96.png" /> 945000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_97.png" /> 952000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_98.png" /> 960000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_99.png" /> 980000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_100.png" /> 990000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_101.png" /> 1000000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_102.png" /> 1008000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_103.png" /> 1020000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_104.png" /> 1030000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_105.png" /> 1040000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_106.png" /> 1050000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_107.png" /> 1078000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_108.png" /> 1080000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_109.png" /> 1092000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_110.png" /> 1095000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_111.png" /> 1120000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_112.png" /> 1130000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_113.png" /> 1140000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_114.png" /> 1170000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_115.png" /> 1176000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_116.png" /> 1190000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_117.png" /> 1200000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_118.png" /> 1204000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_119.png" /> 1230000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_120.png" /> 1240000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_121.png" /> 1260000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_122.png" /> 1290000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_123.png" /> 1350000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_124.png" /> 1360000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_125.png" /> 1372000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_126.png" /> 1386000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_127.png" /> 1400000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_128.png" /> 1428000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_129.png" /> 1440000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_130.png" /> 1460000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_131.png" /> 1470000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_132.png" /> 1485000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_133.png" /> 1500000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_134.png" /> 1519000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_135.png" /> 1520000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_136.png" /> 1540000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_137.png" /> 1545000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_138.png" /> 1560000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_139.png" /> 1582000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_140.png" /> 1590000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_141.png" /> 1600000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_142.png" /> 1610000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_143.png" /> 1617000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_144.png" /> 1620000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_145.png" /> 1640000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_146.png" /> 1680000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_147.png" /> 1695000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_148.png" /> 1700000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_149.png" /> 1720000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_150.png" /> 1750000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_151.png" /> 1760000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_152.png" /> 1764000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_153.png" /> 1800000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_154.png" /> 1806000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_155.png" /> 1820000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_156.png" /> 1848000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_157.png" /> 1860000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_158.png" /> 1862000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_159.png" /> 1870000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_160.png" /> 1890000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_161.png" /> 1911000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_162.png" /> 1920000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_163.png" /> 1960000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_164.png" /> 1980000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_165.png" /> 2000000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_166.png" /> 2009000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_167.png" /> 2040000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_168.png" /> 2060000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_169.png" /> 2079000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_170.png" /> 2100000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_171.png" /> 2107000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_172.png" /> 2120000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_173.png" /> 2160000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_174.png" /> 2163000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_175.png" /> 2170000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_176.png" /> 2190000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_177.png" /> 2200000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_178.png" /> 2205000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_179.png" /> 2250000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_180.png" /> 2260000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_181.png" /> 2300000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_182.png" /> 2310000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_183.png" /> 2373000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_184.png" /> 2376000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_185.png" /> 2380000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_186.png" /> 2400000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_187.png" /> 2420000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_188.png" /> 2440000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_189.png" /> 2450000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_190.png" /> 2460000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_191.png" /> 2500000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_192.png" /> 2520000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_193.png" /> 2530000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_194.png" /> 2548000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_195.png" /> 2558400.0<br />\
+    <img src="styles/legend/tphinngnghip_2_196.png" /> 2580000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_197.png" /> 2600000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_198.png" /> 2640000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_199.png" /> 2660000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_200.png" /> 2700000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_201.png" /> 2720000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_202.png" /> 2730000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_203.png" /> 2760000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_204.png" /> 2800000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_205.png" /> 2856000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_206.png" /> 2860000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_207.png" /> 2870000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_208.png" /> 2880000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_209.png" /> 2926000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_210.png" /> 2940000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_211.png" /> 2970000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_212.png" /> 3000000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_213.png" /> 3003000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_214.png" /> 3010000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_215.png" /> 3080000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_216.png" /> 3090000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_217.png" /> 3100000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_218.png" /> 3120000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_219.png" /> 3150000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_220.png" /> 3168000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_221.png" /> 3180000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_222.png" /> 3200000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_223.png" /> 3280000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_224.png" /> 3300000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_225.png" /> 3311000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_226.png" /> 3360000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_227.png" /> 3390000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_228.png" /> 3400000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_229.png" /> 3410000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_230.png" /> 3465000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_231.png" /> 3500000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_232.png" /> 3600000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_233.png" /> 3630000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_234.png" /> 3640000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_235.png" /> 3660000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_236.png" /> 3740000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_237.png" /> 3800000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_238.png" /> 3900000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_239.png" /> 3960000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_240.png" /> 4000000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_241.png" /> 4026000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_242.png" /> 4080000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_243.png" /> 4100000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_244.png" /> 4180000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_245.png" /> 4200000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_246.png" /> 4214000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_247.png" /> 4290000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_248.png" /> 4300000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_249.png" /> 4320000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_250.png" /> 4340000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_251.png" /> 4410000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_252.png" /> 4488000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_253.png" /> 4500000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_254.png" /> 4508000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_255.png" /> 4560000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_256.png" /> 4620000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_257.png" /> 4680000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_258.png" /> 4730000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_259.png" /> 4760000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_260.png" /> 4800000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_261.png" /> 4851000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_262.png" /> 4880000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_263.png" /> 4920000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_264.png" /> 4950000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_265.png" /> 5000000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_266.png" /> 5040000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_267.png" /> 5047000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_268.png" /> 5110000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_269.png" /> 5148000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_270.png" /> 5160000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_271.png" /> 5194000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_272.png" /> 5200000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_273.png" /> 5280000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_274.png" /> 5400000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_275.png" /> 5440000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_276.png" /> 5500000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_277.png" /> 5537000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_278.png" /> 5600000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_279.png" /> 5676000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_280.png" /> 5720000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_281.png" /> 5740000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_282.png" /> 5760000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_283.png" /> 5880000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_284.png" /> 5940000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_285.png" /> 5969600.0<br />\
+    <img src="styles/legend/tphinngnghip_2_286.png" /> 5978000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_287.png" /> 6000000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_288.png" /> 6020000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_289.png" /> 6200000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_290.png" /> 6240000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_291.png" /> 6300000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_292.png" /> 6440000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_293.png" /> 6480000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_294.png" /> 6580000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_295.png" /> 6600000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_296.png" /> 6664000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_297.png" /> 6800000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_298.png" /> 6820000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_299.png" /> 6860000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_300.png" /> 6864000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_301.png" /> 6930000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_302.png" /> 7000000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_303.png" /> 7200000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_304.png" /> 7210000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_305.png" /> 7300000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_306.png" /> 7350000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_307.png" /> 7420000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_308.png" /> 7440000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_309.png" /> 7480000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_310.png" /> 7560000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_311.png" /> 7700000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_312.png" /> 7900000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_313.png" /> 7910000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_314.png" /> 7920000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_315.png" /> 8000000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_316.png" /> 8030000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_317.png" /> 8160000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_318.png" /> 8200000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_319.png" /> 8300000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_320.png" /> 8400000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_321.png" /> 8528000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_322.png" /> 8540000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_323.png" /> 8600000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_324.png" /> 8640000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_325.png" /> 8760000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_326.png" /> 8800000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_327.png" /> 8976000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_328.png" /> 9000000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_329.png" /> 9020000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_330.png" /> 9200000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_331.png" /> 9394000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_332.png" /> 9400000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_333.png" /> 9460000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_334.png" /> 9520000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_335.png" /> 9600000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_336.png" /> 9636000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_337.png" /> 9800000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_338.png" /> 9840000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_339.png" /> 9900000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_340.png" /> 9960000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_341.png" /> 10233600.0<br />\
+    <img src="styles/legend/tphinngnghip_2_342.png" /> 10300000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_343.png" /> 10320000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_344.png" /> 10340000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_345.png" /> 10500000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_346.png" /> 10600000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_347.png" /> 10800000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_348.png" /> 10890000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_349.png" /> 11040000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_350.png" /> 11280000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_351.png" /> 11300000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_352.png" /> 11330000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_353.png" /> 11352000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_354.png" /> 11660000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_355.png" /> 11760000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_356.png" /> 11880000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_357.png" /> 12000000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_358.png" /> 12200000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_359.png" /> 12360000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_360.png" /> 12408000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_361.png" /> 12430000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_362.png" /> 12480000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_363.png" /> 12720000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_364.png" /> 13200000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_365.png" /> 13420000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_366.png" /> 13560000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_367.png" /> 13596000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_368.png" /> 13600000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_369.png" /> 14400000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_370.png" /> 14640000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_371.png" /> 14960000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_372.png" /> 15000000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_373.png" /> 15840000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_374.png" /> 16104000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_375.png" /> 16320000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_376.png" /> 16500000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_377.png" /> 17952000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_378.png" /> 18000000.0<br />\
+    <img src="styles/legend/tphinngnghip_2_379.png" /> 19800000.0<br />' });
+var format_That_3 = new ol.format.GeoJSON();
+var features_That_3 = format_That_3.readFeatures(json_That_3, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_That_3 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_That_3.addFeatures(features_That_3);
+var lyr_That_3 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_That_3, 
+                style: style_That_3,
+                popuplayertitle: 'Thửa đất',
+                interactive: true,
+    title: 'Thửa đất<br />\
+    <img src="styles/legend/That_3_0.png" /> Đất bằng chưa sử dụng<br />\
+    <img src="styles/legend/That_3_1.png" /> Đất bằng trồng cây hàng năm khác<br />\
+    <img src="styles/legend/That_3_2.png" /> Đất an ninh<br />\
+    <img src="styles/legend/That_3_3.png" /> Đất trồng cây lâu năm<br />\
+    <img src="styles/legend/That_3_4.png" /> Đất công trình hạ tầng bưu chính, viễn thông, công nghệ thông tin<br />\
+    <img src="styles/legend/That_3_5.png" /> Đất chợ dân sinh, chợ đầu mối<br />\
+    <img src="styles/legend/That_3_6.png" /> Đất đồi núi chưa sử dụng<br />\
+    <img src="styles/legend/That_3_7.png" /> Đất xây dựng cơ sở giáo dục và đào tạo<br />\
+    <img src="styles/legend/That_3_8.png" /> Đất công trình giao thông<br />\
+    <img src="styles/legend/That_3_9.png" /> Đất khu vui chơi, giải trí công cộng, sinh hoạt cộng đồng<br />\
+    <img src="styles/legend/That_3_10.png" /> Đất công trình năng lượng, chiếu sáng công cộng<br />\
+    <img src="styles/legend/That_3_11.png" /> Đất xây dựng cơ sở thể dục, thể thao<br />\
+    <img src="styles/legend/That_3_12.png" /> Đất xây dựng cơ sở văn hóa<br />\
+    <img src="styles/legend/That_3_13.png" /> Đất xây dựng cơ sở y tế<br />\
+    <img src="styles/legend/That_3_14.png" /> Đất trồng cây hằng năm khác<br />\
+    <img src="styles/legend/That_3_15.png" /> Đất trồng cây công nghiệp lâu năm<br />\
+    <img src="styles/legend/That_3_16.png" /> Đất trồng cây lâu năm khác<br />\
+    <img src="styles/legend/That_3_17.png" /> Đất trồng cây ăn quả lâu năm<br />\
+    <img src="styles/legend/That_3_18.png" /> Đất chuyên trồng lúa<br />\
+    <img src="styles/legend/That_3_19.png" /> Đất trồng lúa còn lại<br />\
+    <img src="styles/legend/That_3_20.png" /> Đất có mặt nước chuyên dùng dạng ao, hồ, đầm, phá<br />\
+    <img src="styles/legend/That_3_21.png" /> Đất nghĩa trang, nhà tang lễ, cơ sở hỏa táng; đất cơ sở lưu giữ tro cốt<br />\
+    <img src="styles/legend/That_3_22.png" /> Đất ở tại đô thị<br />\
+    <img src="styles/legend/That_3_23.png" /> Đất cơ sở sản xuất phi nông nghiệp<br />\
+    <img src="styles/legend/That_3_24.png" /> Đất sản xuất vật liệu xây dựng, làm đồ gốm<br />\
+    <img src="styles/legend/That_3_25.png" /> Đất tín ngưỡng<br />\
+    <img src="styles/legend/That_3_26.png" /> Đất tôn giáo<br />\
+    <img src="styles/legend/That_3_27.png" /> Đất xây dựng trụ sở cơ quan<br />\
+    <img src="styles/legend/That_3_28.png" /> Đất trụ sở khác<br />\
+    <img src="styles/legend/That_3_29.png" /> Đất quốc phòng<br />\
+    <img src="styles/legend/That_3_30.png" /> Đất nuôi trồng thủy sản<br />' });
+
+lyr_nggiaothng_0.setVisible(true);lyr_tnngnghip_1.setVisible(false);lyr_tphinngnghip_2.setVisible(false);lyr_That_3.setVisible(true);
+var layersList = [lyr_nggiaothng_0,lyr_tnngnghip_1,lyr_tphinngnghip_2,lyr_That_3];
+lyr_nggiaothng_0.set('fieldAliases', {'id': 'id', 'ten_duong': 'Tên đường', 'do_rong': 'do_rong', 'doan_duong': 'doan_duong', 'gia_ODT': 'gia_ODT', });
+lyr_tnngnghip_1.set('fieldAliases', {'so_thua': 'so_thua', 'DT': 'DT', 'to_BD': 'to_BD', 'loai_dat': 'loai_dat', 'dia_chi': 'dia_chi', 'ten_CSD': 'ten_CSD', 'ghi_chu': 'ghi_chu', 'he_so_ODT': 'he_so_ODT', 'gia_ODT': 'gia_ODT', 'gia_ODTgoc': 'gia_ODTgoc', 'ten_duong': 'ten_duong', 'doan_duong': 'doan_duong', 'he_so_CSK': 'he_so_CSK', 'gia_CSK': 'gia_CSK', 'he_so_TSC': 'he_so_TSC', 'gia_TSC': 'gia_TSC', 'he_so_CCC': 'he_so_CCC', 'gia_CCC': 'gia_CCC', 'he_so_NTD': 'he_so_NTD', 'gia_NTD': 'gia_NTD', 'hang_dat': 'Hạng đất', 'gia_CHN': 'Giá đất cây hàng năm', 'gia_CLN': 'Giá đất cây lâu năm', 'he_so_TMD': 'he_so_TMD', 'gia_TMD': 'gia_TMD', 'he_so_DSN': 'he_so_DSN', 'gia_DSN': 'gia_DSN', 'he_so_CQA': 'he_so_CQA', 'gia_CQA': 'gia_CQA', 'he_so_TIN': 'he_so_TIN', 'gia_TIN': 'gia_TIN', 'he_so_TON': 'he_so_TON', 'gia_TON': 'gia_TON', 'gia_NTS': 'Giá đất nuôi trồng thủy sản', 'to_thua': 'to_thua', });
+lyr_tphinngnghip_2.set('fieldAliases', {'so_thua': 'so_thua', 'DT': 'DT', 'to_BD': 'to_BD', 'loai_dat': 'loai_dat', 'dia_chi': 'dia_chi', 'ten_CSD': 'ten_CSD', 'ghi_chu': 'ghi_chu', 'he_so_ODT': 'Hệ số đất ở đô thị', 'gia_ODT': 'Giá đất ở đô thị', 'gia_ODTgoc': 'gia_ODTgoc', 'ten_duong': 'ten_duong', 'doan_duong': 'doan_duong', 'he_so_CSK': 'hệ số đất sản xuất, kinh doanh phi nông nghiệp', 'gia_CSK': 'Giá đất sản xuất, kinh doanh phi nông nghiệp', 'he_so_TSC': 'Hệ số đất xây dựng trụ sở cơ quan', 'gia_TSC': 'Giá đất xây dựng trụ sở cơ quan', 'he_so_CCC': 'Hệ số đất sử dụng vào mục đích công cộng', 'gia_CCC': 'Giá đất sử dụng vào mục đích công cộng', 'he_so_NTD': 'Hệ số đất nghĩa trang', 'gia_NTD': 'Giá đất nghĩa trang', 'hang_dat': 'hang_dat', 'gia_CHN': 'gia_CHN', 'gia_CLN': 'gia_CLN', 'he_so_TMD': 'Hệ số đất thương mại, dịch vụ', 'gia_TMD': 'Giá đất thương mại, dịch vụ', 'he_so_DSN': 'Hệ số đất công trình sự nghiệp', 'gia_DSN': 'Giá đất công trình sự nghiệp', 'he_so_CQA': 'Hệ số đất quốc phòng, an ninh', 'gia_CQA': 'Giá đất quốc phòng, an ninh', 'he_so_TIN': 'Hệ số đất tín ngưỡng', 'gia_TIN': 'Giá đất tín ngưỡng', 'he_so_TON': 'Hệ số đất tôn giáo', 'gia_TON': 'Giá đất tôn giáo', 'gia_NTS': 'gia_NTS', 'to_thua': 'to_thua', });
+lyr_That_3.set('fieldAliases', {'so_thua': 'Số thửa', 'DT': 'Diện tích', 'to_BD': 'Tờ bản đồ', 'loai_dat': 'Loại đất', 'dia_chi': 'Địa chỉ', 'ten_CSD': 'Chủ sử dụng đất', 'ghi_chu': 'ghi_chu', 'he_so_ODT': 'he_so_ODT', 'gia_ODT': 'giá đất ở đô thị', 'gia_ODTgoc': 'gia_ODTgoc', 'ten_duong': 'Tên đường', 'doan_duong': 'Đoạn đường', 'he_so_CSK': 'he_so_CSK', 'gia_CSK': 'Giá đất sản xuất, kinh doanh phi nông nghiệp', 'he_so_TSC': 'he_so_TSC', 'gia_TSC': 'Giá đất xây dựng trụ sở cơ quan', 'he_so_CCC': 'he_so_CCC', 'gia_CCC': 'Giá đất sử dụng vào mục đích công cộng', 'he_so_NTD': 'he_so_NTD', 'gia_NTD': 'Giá đất nghĩa trang', 'hang_dat': 'hang_dat', 'gia_CHN': 'Giá đất cây hàng năm', 'gia_CLN': 'Giá đất cây lâu năm', 'he_so_TMD': 'he_so_TMD', 'gia_TMD': 'Giá đất thương mại, dịch vụ', 'he_so_DSN': 'he_so_DSN', 'gia_DSN': 'Giá đất công trình sự nghiệp', 'he_so_CQA': 'he_so_CQA', 'gia_CQA': 'Giá đất quốc phòng, an ninh', 'he_so_TIN': 'he_so_TIN', 'gia_TIN': 'Giá đất tín ngưỡng', 'he_so_TON': 'he_so_TON', 'gia_TON': 'Giá đất tôn giáo', 'gia_NTS': 'Giá đất nuôi trồng thủy sản', 'to_thua': 'to_thua', });
+lyr_nggiaothng_0.set('fieldImages', {'id': 'TextEdit', 'ten_duong': 'TextEdit', 'do_rong': 'TextEdit', 'doan_duong': 'TextEdit', 'gia_ODT': 'TextEdit', });
+lyr_tnngnghip_1.set('fieldImages', {'so_thua': 'TextEdit', 'DT': 'TextEdit', 'to_BD': 'TextEdit', 'loai_dat': 'TextEdit', 'dia_chi': 'TextEdit', 'ten_CSD': 'TextEdit', 'ghi_chu': 'TextEdit', 'he_so_ODT': 'TextEdit', 'gia_ODT': 'TextEdit', 'gia_ODTgoc': 'TextEdit', 'ten_duong': 'TextEdit', 'doan_duong': 'TextEdit', 'he_so_CSK': 'TextEdit', 'gia_CSK': 'TextEdit', 'he_so_TSC': 'TextEdit', 'gia_TSC': 'TextEdit', 'he_so_CCC': 'TextEdit', 'gia_CCC': 'TextEdit', 'he_so_NTD': 'TextEdit', 'gia_NTD': 'TextEdit', 'hang_dat': 'TextEdit', 'gia_CHN': 'TextEdit', 'gia_CLN': 'TextEdit', 'he_so_TMD': 'TextEdit', 'gia_TMD': 'TextEdit', 'he_so_DSN': 'TextEdit', 'gia_DSN': 'TextEdit', 'he_so_CQA': 'TextEdit', 'gia_CQA': 'TextEdit', 'he_so_TIN': 'TextEdit', 'gia_TIN': 'TextEdit', 'he_so_TON': 'TextEdit', 'gia_TON': 'TextEdit', 'gia_NTS': 'TextEdit', 'to_thua': '', });
+lyr_tphinngnghip_2.set('fieldImages', {'so_thua': 'TextEdit', 'DT': 'TextEdit', 'to_BD': 'TextEdit', 'loai_dat': 'TextEdit', 'dia_chi': 'TextEdit', 'ten_CSD': 'TextEdit', 'ghi_chu': 'TextEdit', 'he_so_ODT': 'TextEdit', 'gia_ODT': 'TextEdit', 'gia_ODTgoc': 'TextEdit', 'ten_duong': 'TextEdit', 'doan_duong': 'TextEdit', 'he_so_CSK': 'TextEdit', 'gia_CSK': 'TextEdit', 'he_so_TSC': 'TextEdit', 'gia_TSC': 'TextEdit', 'he_so_CCC': 'TextEdit', 'gia_CCC': 'TextEdit', 'he_so_NTD': 'TextEdit', 'gia_NTD': 'TextEdit', 'hang_dat': 'TextEdit', 'gia_CHN': 'TextEdit', 'gia_CLN': 'TextEdit', 'he_so_TMD': 'TextEdit', 'gia_TMD': 'TextEdit', 'he_so_DSN': 'TextEdit', 'gia_DSN': 'TextEdit', 'he_so_CQA': 'TextEdit', 'gia_CQA': 'TextEdit', 'he_so_TIN': 'TextEdit', 'gia_TIN': 'TextEdit', 'he_so_TON': 'TextEdit', 'gia_TON': 'TextEdit', 'gia_NTS': 'TextEdit', 'to_thua': 'TextEdit', });
+lyr_That_3.set('fieldImages', {'so_thua': 'TextEdit', 'DT': 'TextEdit', 'to_BD': 'TextEdit', 'loai_dat': 'TextEdit', 'dia_chi': 'TextEdit', 'ten_CSD': 'TextEdit', 'ghi_chu': 'TextEdit', 'he_so_ODT': 'TextEdit', 'gia_ODT': 'TextEdit', 'gia_ODTgoc': 'TextEdit', 'ten_duong': 'TextEdit', 'doan_duong': 'TextEdit', 'he_so_CSK': 'TextEdit', 'gia_CSK': 'TextEdit', 'he_so_TSC': 'TextEdit', 'gia_TSC': 'TextEdit', 'he_so_CCC': 'TextEdit', 'gia_CCC': 'TextEdit', 'he_so_NTD': 'TextEdit', 'gia_NTD': 'TextEdit', 'hang_dat': 'TextEdit', 'gia_CHN': 'TextEdit', 'gia_CLN': 'TextEdit', 'he_so_TMD': 'TextEdit', 'gia_TMD': 'TextEdit', 'he_so_DSN': 'TextEdit', 'gia_DSN': 'TextEdit', 'he_so_CQA': 'TextEdit', 'gia_CQA': 'TextEdit', 'he_so_TIN': 'TextEdit', 'gia_TIN': 'TextEdit', 'he_so_TON': 'TextEdit', 'gia_TON': 'TextEdit', 'gia_NTS': 'TextEdit', 'to_thua': 'TextEdit', });
+lyr_nggiaothng_0.set('fieldLabels', {'id': 'hidden field', 'ten_duong': 'inline label - visible with data', 'do_rong': 'hidden field', 'doan_duong': 'hidden field', 'gia_ODT': 'hidden field', });
+lyr_tnngnghip_1.set('fieldLabels', {'so_thua': 'hidden field', 'DT': 'hidden field', 'to_BD': 'hidden field', 'loai_dat': 'hidden field', 'dia_chi': 'hidden field', 'ten_CSD': 'hidden field', 'ghi_chu': 'hidden field', 'he_so_ODT': 'hidden field', 'gia_ODT': 'hidden field', 'gia_ODTgoc': 'hidden field', 'ten_duong': 'hidden field', 'doan_duong': 'hidden field', 'he_so_CSK': 'hidden field', 'gia_CSK': 'hidden field', 'he_so_TSC': 'hidden field', 'gia_TSC': 'hidden field', 'he_so_CCC': 'hidden field', 'gia_CCC': 'hidden field', 'he_so_NTD': 'hidden field', 'gia_NTD': 'hidden field', 'hang_dat': 'inline label - visible with data', 'gia_CHN': 'inline label - visible with data', 'gia_CLN': 'inline label - visible with data', 'he_so_TMD': 'hidden field', 'gia_TMD': 'hidden field', 'he_so_DSN': 'hidden field', 'gia_DSN': 'hidden field', 'he_so_CQA': 'hidden field', 'gia_CQA': 'hidden field', 'he_so_TIN': 'hidden field', 'gia_TIN': 'hidden field', 'he_so_TON': 'hidden field', 'gia_TON': 'hidden field', 'gia_NTS': 'inline label - visible with data', 'to_thua': 'hidden field', });
+lyr_tphinngnghip_2.set('fieldLabels', {'so_thua': 'hidden field', 'DT': 'hidden field', 'to_BD': 'hidden field', 'loai_dat': 'hidden field', 'dia_chi': 'hidden field', 'ten_CSD': 'hidden field', 'ghi_chu': 'hidden field', 'he_so_ODT': 'inline label - visible with data', 'gia_ODT': 'inline label - visible with data', 'gia_ODTgoc': 'hidden field', 'ten_duong': 'hidden field', 'doan_duong': 'hidden field', 'he_so_CSK': 'inline label - visible with data', 'gia_CSK': 'inline label - visible with data', 'he_so_TSC': 'inline label - visible with data', 'gia_TSC': 'inline label - visible with data', 'he_so_CCC': 'inline label - visible with data', 'gia_CCC': 'inline label - visible with data', 'he_so_NTD': 'inline label - visible with data', 'gia_NTD': 'inline label - visible with data', 'hang_dat': 'hidden field', 'gia_CHN': 'hidden field', 'gia_CLN': 'hidden field', 'he_so_TMD': 'inline label - visible with data', 'gia_TMD': 'inline label - visible with data', 'he_so_DSN': 'inline label - visible with data', 'gia_DSN': 'inline label - visible with data', 'he_so_CQA': 'inline label - visible with data', 'gia_CQA': 'inline label - visible with data', 'he_so_TIN': 'inline label - visible with data', 'gia_TIN': 'inline label - visible with data', 'he_so_TON': 'inline label - visible with data', 'gia_TON': 'inline label - visible with data', 'gia_NTS': 'hidden field', 'to_thua': 'hidden field', });
+lyr_That_3.set('fieldLabels', {'so_thua': 'inline label - visible with data', 'DT': 'inline label - visible with data', 'to_BD': 'inline label - visible with data', 'loai_dat': 'inline label - visible with data', 'dia_chi': 'hidden field', 'ten_CSD': 'hidden field', 'ghi_chu': 'hidden field', 'he_so_ODT': 'hidden field', 'gia_ODT': 'inline label - visible with data', 'gia_ODTgoc': 'hidden field', 'ten_duong': 'hidden field', 'doan_duong': 'hidden field', 'he_so_CSK': 'hidden field', 'gia_CSK': 'inline label - visible with data', 'he_so_TSC': 'hidden field', 'gia_TSC': 'inline label - visible with data', 'he_so_CCC': 'hidden field', 'gia_CCC': 'inline label - visible with data', 'he_so_NTD': 'hidden field', 'gia_NTD': 'inline label - visible with data', 'hang_dat': 'hidden field', 'gia_CHN': 'inline label - visible with data', 'gia_CLN': 'inline label - visible with data', 'he_so_TMD': 'hidden field', 'gia_TMD': 'inline label - visible with data', 'he_so_DSN': 'hidden field', 'gia_DSN': 'inline label - visible with data', 'he_so_CQA': 'hidden field', 'gia_CQA': 'inline label - visible with data', 'he_so_TIN': 'hidden field', 'gia_TIN': 'inline label - visible with data', 'he_so_TON': 'hidden field', 'gia_TON': 'inline label - visible with data', 'gia_NTS': 'inline label - visible with data', 'to_thua': 'hidden field', });
+lyr_That_3.on('precompose', function(evt) {
+    evt.context.globalCompositeOperation = 'normal';
+});
